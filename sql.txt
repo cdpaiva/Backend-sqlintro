@@ -24,10 +24,7 @@ VALUES  (78, "Chef Anton's Tomato Soup", 2, 2, "12 - 8oz cans", 8),
 
 UPDATE Products
 SET Price = Price + 1.5
-WHERE ProductID IN (
-        SELECT ProductID
-        FROM Products
-        LIMIT 2);
+WHERE ProductID < 3; 
         
 (6) Delete all rows of the Products Table where the price is less than 7.00. Paste your SQL statement below.
 
